@@ -10,7 +10,6 @@ export const App = () => {
     setQuery(event.target.value);
   };
 
-  // 3. фильтрация фильмов
   const normalizedQuery = query.trim().toLowerCase();
 
   const visibleMovies = moviesFromServer.filter(movie => {
